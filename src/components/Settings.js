@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Settings = ({ onUrlChange, onFavChange, url, favHidden, isValid }) => (
+const MDSettings = ({ onUrlChange, onFavChange, url, favHidden, isValid }) => (
 	<div className="settings">
       <div className="col-xs-12">
         <h1>Micro Dashboard</h1>
@@ -31,4 +31,4 @@ const Settings = ({ onUrlChange, onFavChange, url, favHidden, isValid }) => (
     </div>
 )
 
-export default Settings
+export default MDSettings
