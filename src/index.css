@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: #ececec;
+  color: #5b6269;
+  font-size: 14px;
+}
+
+a:link, a:hover, a:visited, a:active {
+	color: #446CB3;
+}
+
+.settings {
+	text-align: center;
+	padding: 0 10px;
+}
+
+h1, h2 {
+	color: #446CB3;
+}
+
+.settings__options {
+	text-align: center;
+}
+
+.settings__options:hover {
+	pointer: cursor;
+}
+
+.settings__options input {
+	margin-left: 10px;
+}
+
+.content-wrapper {
+	margin: 10px auto;
+	padding: 0 10px;
+	max-width: 600px;
+}
+
+.settings__url {
+	font-size: 14px;
+	width: 90%;
+    max-width: 300px;
+	padding: 10px;
+}
+
+.url--invalid {
+	color: #EC644B;
+}
+
+.url--valid {
+	color: #26A65B;
+}
+
+.info {
+	text-align: center;
+    border-radius: 3px;
+    margin: 0;
+}
+
+.data {
+	margin-top: 10px;
+}
+
+.data__row {
+	display: flex;
+	padding: 5px;
+	background: #eee;
+}
+
+.data__row:nth-child(even) {
+	background: #e4e3e3;
+}
+
+
+.data__row--header,
+.data__row:hover {
+	cursor: pointer;
+	background: #446CB3;
+	color: white;
+}
+
+.data__row--name {
+	flex: 1;
+    flex-basis: 85%;
+}
+
+.data__row--count {
+	flex-basis: 15%;
+	text-align: right;
+}
+
+button {
+	border: 1px solid #446CB3;
+    padding: 10px 20px;
+    background: #446CB3;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 200px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 10px;
+	text-align: center;
+}
+
+@media (max-width: 380px) {
+	.settings {
+		margin-top: 100px;
+	}
+}
