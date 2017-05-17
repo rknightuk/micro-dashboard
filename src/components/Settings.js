@@ -6,6 +6,7 @@ const Settings = ({ onUrlChange, onFavChange, url, favHidden, isValid }) => (
         <h1>Micro Dashboard</h1>
         <h2>A dashboard for micro-analytics</h2>
         <p>enter your <a href="https://github.com/micro-analytics/micro-analytics-cli">micro-analytics</a> url</p>
+        
         <input 
           type="text" 
           onChange={(e) => onUrlChange(e.target.value)}
@@ -13,6 +14,7 @@ const Settings = ({ onUrlChange, onFavChange, url, favHidden, isValid }) => (
           placeholder="https://demo.micro-analytics.io"
           className={isValid ? 'settings__url url--valid' : 'settings__url url--invalid'}
         />
+
         {isValid && (
           <p className="settings__options">
             <label>
